@@ -1,0 +1,38 @@
+package Laboratorio1;
+import java.util.Scanner;
+
+public class Ejercicio2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingresa tu nombre: ");
+        String nombre = scanner.nextLine();
+
+        System.out.print("Ingresa tu edad: ");
+        int edad = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("Ingresa tu nacionalidad: ");
+        String nacionalidad = scanner.nextLine();
+
+        System.out.print("Ingresa tu ocupación: ");
+        String ocupacion = scanner.nextLine();
+
+        System.out.print("Ingresa tu salario mensual: ");
+        double salario_mensual = scanner.nextDouble();
+
+        int Actual = 2025;
+        int Nacimiento = Actual - edad;
+
+        System.out.println("Aqui tienes tu perfil segun los datos ingresados");
+        System.out.println("Nombre: " + nombre);
+        System.out.println("Edad: " + edad);
+        System.out.println("Nacionalidad: " + nacionalidad);
+        System.out.println("Ocupación: " + ocupacion);
+        System.out.println("Salario mensual: $" + salario_mensual);
+        System.out.println("Año de nacimiento: " + Nacimiento);
+
+        scanner.close();
+    }
+
+}
