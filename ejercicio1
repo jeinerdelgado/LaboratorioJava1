@@ -1,0 +1,22 @@
+package Laboratorio1;
+import java.util.Scanner;
+
+public class Ejercicio1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Ingrese la primera calificación y calcularemos tu promedio final: ");
+        int nota_1 = scanner.nextInt();
+
+        System.out.print("Ingrese la segunda calificación y calcularemos tu promedio final: ");
+        int nota_2 = scanner.nextInt();
+
+        System.out.print("Ingrese la tercera calificación y calcularemos tu promedio final: ");
+        int nota_3 = scanner.nextInt();
+
+        double promedio = (nota_1 + nota_2 + nota_3) / 3.0;
+
+        System.out.println("El promedio de las calificaciones es: " + promedio);
+
+        scanner.close();
+    }
